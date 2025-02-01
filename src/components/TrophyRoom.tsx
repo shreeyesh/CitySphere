@@ -12,21 +12,21 @@ const trophies = [
     name: "Premier League",
     year: "2023",
     description: "Champions of England",
-    position: [-4, 0, 0],
+    position: [-4, 0, 0] as [number, number, number],
   },
   {
     id: 2,
     name: "FA Cup",
     year: "2023",
     description: "FA Cup Winners",
-    position: [0, 0, 0],
+    position: [0, 0, 0] as [number, number, number],
   },
   {
     id: 3,
     name: "Champions League",
     year: "2023",
     description: "European Champions",
-    position: [4, 0, 0],
+    position: [4, 0, 0] as [number, number, number],
   },
 ]
 
@@ -35,7 +35,7 @@ export function TrophyRoom() {
   const [selectedTrophy, setSelectedTrophy] = useState<number | null>(null)
 
   return (
-    <section className="h-screen bg-[#0A1128] relative">
+    <section className="h-screen bg-[#0A1128] relative" id="trophies">
       <div className="absolute top-0 left-0 w-full z-10 bg-gradient-to-b from-[#1C2C5B] p-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export function TrophyRoom() {
               <Text
                 position={[trophy.position[0], -2, trophy.position[2]]}
                 fontSize={0.3}
-                color="#FFD700"
+                color="#FFFFFF"
                 anchorX="center"
                 anchorY="middle"
               >

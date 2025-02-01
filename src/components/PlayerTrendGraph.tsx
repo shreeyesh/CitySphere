@@ -8,7 +8,6 @@ interface SeasonStats {
 }
 
 interface PlayerTrendGraphProps {
-  playerName: string;
   data: SeasonStats[];
   statType: 'goals' | 'assists' | 'matches';
 }
@@ -19,7 +18,7 @@ const colors = {
   matches: "#4CAF50"
 };
 
-export function PlayerTrendGraph({ playerName, data, statType }: PlayerTrendGraphProps) {
+export function PlayerTrendGraph({ data, statType }: PlayerTrendGraphProps) {
   return (
     <div className="h-64 w-full">
       <ResponsiveContainer width="100%" height="100%">

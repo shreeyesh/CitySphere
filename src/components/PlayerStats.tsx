@@ -72,9 +72,8 @@ export function PlayerStats() {
 
         <div className="bg-[#243772] p-6 rounded-lg">
           <PlayerTrendGraph
-            playerName={selectedPlayer}
-            data={playerData[selectedPlayer as keyof typeof playerData]}
-            statType={selectedStat}
+            data={playerData[selectedPlayer]}
+            statType="goals"
           />
         </div>
 

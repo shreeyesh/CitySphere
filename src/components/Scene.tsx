@@ -5,6 +5,7 @@ import { FootballModel } from './FootballModel'
 import { StadiumModel } from './StadiumModel'
 import { Particles } from './Particles'
 import { TeamStats } from './TeamStats'
+import * as THREE from 'three'
 
 export function Scene() {
   const groupRef = useRef<THREE.Group>(null)

@@ -60,7 +60,7 @@ const trophyHistory = [
 
 export function Timeline() {
   return (
-    <section className="py-20 bg-[#0A1128]">
+    <section className="py-20 bg-[#0A1128]" id="timeline">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

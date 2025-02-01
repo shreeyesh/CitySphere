@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Cylinder, Box } from '@react-three/drei'
 import { Vector3 } from 'three'
+import * as THREE from 'three'
 
 interface TrophyModelProps {
   position: Vector3 | [number, number, number]

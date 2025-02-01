@@ -56,7 +56,6 @@ const clubColors = {
 
 export function RivalComparison() {
   const [hoveredClub, setHoveredClub] = useState<string | null>(null);
-  const [selectedTrophy, setSelectedTrophy] = useState<string | null>(null);
 
   const getMaxValue = (trophyName: string) => {
     const trophy = trophyData.find(t => t.name === trophyName);
